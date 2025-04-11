@@ -8,30 +8,20 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.container{
+.main{ 
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
 }
 
 /* section 1 style */
-
-.nav{
-    background-color: white;
-    width: 100%;
-    height: 80px;
-    position: relative;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 2rem;
-    gap: 10px;
+.custom-navbar{
+    height: 75px;
+}
+.navbar .nav-link{
+    color: #1A4861;
     font-weight: 600;
-    font-size: 16px;
-    /* overflow: hidden; */
-    float: right;
-
+    font-family: "Montserrat";
 }
 
 /* ✅ HAMBURGER - hidden on desktop, visible on mobile */
@@ -81,13 +71,7 @@ li{
 
 /* section 2 style */
 .section2{
-    /* position: relative;
-    width: 100%;
-    height: 60%;
-    background: #24678B;
-    padding: 4rem 6rem;
-    margin: 4rem 0 4rem;
-    display: flex; */
+    
 
     position: relative;
     width: 100%;
@@ -102,10 +86,6 @@ li{
 
 }
 .heading-paragraph{
-    /* width: 50%;
-    display: flex;
-    flex-direction: column;
-    position: absolute; */
 
   width: 50%;
   display: flex;
@@ -130,34 +110,20 @@ li{
 }
 
 .line{
-    /* background-color: #B2D190;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: 120px;
-    left: 15px; */
-
     background-color: #B2D190;
     width: 60px;
     height: 5px;
     margin: 0rem 0;
+    display: inline-block;
+    position: absolute;
+    top: 160px;
 }
 
 
 
 
 .btn-knowMore{
-    /* position: absolute;
-    width: 145px;
-    height: 45px;
-    left: 13px;
-    top: 276px;
-    box-shadow: 0px 0px 10px #B2D190;
-    font-weight: 500;
-    color: white;
-    margin-top: 20px; */
-
-    /* optimized code from chat-gpt to make page responsive */
+    /* to make page responsive */ 
     width: 145px;
     height: 45px;
     box-shadow: 0px 0px 10px #B2D190;
@@ -174,7 +140,7 @@ li{
     right: 5%;
     position: absolute;
     /* width: 400px; */
-    height: 560px;
+    height: 600px;
     /* left: 900px; */
     top: 100px;
     padding: 40px;
@@ -205,6 +171,16 @@ a:link{
     
 }
 
+.btn-custom{
+    background-color: #B2D190;
+    margin-top: 20px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+}
+
+
+
 button{
     width: 145px;
     height: 45px;
@@ -213,8 +189,6 @@ button{
     color: white;
     font-weight: 500;
     cursor: pointer;
-    /* left: 153px;
-    top: 1276px; */
 }
 
 .section3{
@@ -249,14 +223,14 @@ button{
     margin: 0rem 0;
 }
 
-.boxContainer{
+.custom-box{
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 50px;
   align-items: center;
-  height: 200px; /* Adjust height as needed */
+  height: 250px; /* Adjust height as needed */
   margin-top: 4rem;
 }
 
@@ -271,6 +245,10 @@ button{
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.box p{
+    margin: 0;
 }
 
 /* Alternating up-down effect */
@@ -317,8 +295,7 @@ button{
     width: 60px;
     height: 5px;
     position: absolute;
-    top: 38px;
-    left: 660px;
+    /* left: 10px; */
 }
 
 /* product container */
@@ -353,7 +330,7 @@ button{
 /* section 5 (our Experts ) style start from here  */
 .section5{
     position: relative;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 .ourExperts{
@@ -380,8 +357,6 @@ button{
     width: 60px;
     height: 5px;
     position: absolute;
-    top: 38px;
-    left: 660px;
 }
 
 /* experts container */
@@ -428,7 +403,7 @@ button{
 
 .section6{
     position: relative;
-    margin-top: 150px;
+    margin-top: 2rem;
 }
 
 .latestBlogs{
@@ -454,9 +429,9 @@ button{
     background-color: #B2D190;
     width: 60px;
     height: 5px;
-    position: absolute;
+    /* position: absolute;
     top: 38px;
-    left: 660px;
+    left: 660px; */
 }
 
 /* experts container */
@@ -550,11 +525,12 @@ button{
 }
 
 .newsLetter label{
-    padding: 13px  30px;
+    padding: 10px  30px;
     background: #B2D190;
     color: white;
     border-radius: 0px 5px 5px 0px;
     margin: 5px 10px 5px 0;
+    border: solid #B2D190 1px;
 }
 
 
@@ -628,6 +604,70 @@ footer{
     margin-bottom: 1rem;
 }
 
+/* Owlcarousal css */
+.owl-nav {
+    display: flex !important;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .owl-nav button {
+    background-color: #B2D190;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #333;
+  }
+
+.media-body h4{
+    background-color: #B2D190;
+    padding: 5px;
+    text-align: center;
+}
+.media-body a{
+    color: #1A4861;
+}
+.carouselWrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+.owl-carousel .item {
+    height: 350px;
+    overflow: hidden;
+}
+
+.owl-carousel .fa-chevron-left,
+.owl-carousel .fa-chevron-right {
+  font-size: 25px;
+  color: black;
+  background: #B2D190;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.owl-carousel .item,
+.media-custom {
+  width: 100%;         /* Let Bootstrap grid control width */
+  max-width: 350px;    /* Optional: limit width of each item */
+/* Set height as needed */
+  margin: auto;        /* Center items */
+}
+.media-custom img {
+    height: 250px;
+    object-fit: cover; /* crops image nicely */
+    width: 100%;
+  }
+  
+.owl-dots{
+    display: none;
+}
 
 
 /* Tablet */
@@ -656,6 +696,12 @@ footer{
       position: static;
       margin: 1rem auto;
     }
+
+    .line {
+        margin: 0.5rem auto;
+        display:none;
+        
+    }
   }
   
   /* Mobile */
@@ -663,6 +709,7 @@ footer{
     
     .line {
         margin: 0.5rem auto;
+        display: none;
     }
     .nav {
       flex-direction: column;
@@ -684,7 +731,7 @@ footer{
       gap: 2rem;
     }
   
-    .boxContainer {
+    .custom-box {
       flex-direction: column;
       gap: 2rem;
       height: auto;
@@ -789,6 +836,11 @@ footer{
     cursor: pointer;
   }
 }
+
+#mainNavbar {
+    background-color: #f8f9fa; /* Change to your desired color */
+    padding: 1rem;
+  }
 
 
   }

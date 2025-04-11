@@ -3,34 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <div class="main">
         <!-- section 1 start from here -->
         <div class="section1"> 
-            <!-- navbar -->
-            <div class="nav">
-                <!-- Logo -->
-                <div class="logo">
-                  <img src="/images/image 10.png" alt="logo">
+
+            <!-- bootstrap navbar -->
+            <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+                <div class="container-fluid">
+                  <!-- Logo -->
+                  <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/image 10.png" alt="Logo" class="logo me-2" />
+                  </a>
+              
+                  <!-- Hamburger / Toggler -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <!-- Collapsible Menu -->
+                  <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" style="color: #B2D190;" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">About-us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Career</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            
-                <!-- ✅🍔 Hamburger icon for mobile -->
-                <div class="hamburger" id="hamburger">&#9776;</div>
-            
-                <!-- Navigation list -->
-                <ul class="navlist" id="navlist">
-                  <li class="home" style="color: #B2D190;">Home</li>
-                  <li><a href="">About-us</a></li>
-                  <li><a href="">Product</a></li>
-                  <li><a href="">Services</a></li>
-                  <li><a href="">Career</a></li>
-                  <li><a href="">Contact</a></li>
-                </ul>
-              </div>
-            <!-- end of navbar -->
+              </nav>
+        
         </div>
         
         <!-- section 1 end here -->
@@ -39,8 +63,8 @@
         <div class="section2">
 
             <div class="heading-paragraph">
-                <h1>Empowering Industries with<br> 
-                    Advanced Wireless Technologies
+                <h1 style="margin: 0;">Empowering Industries with
+                    <h1 style="margin: 0;">Advanced <span>Wireless Technologies</span></h1>
                     <div class="line"></div>
                 </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam aperiam vel doloribus magni voluptas dolore nobis odio provident beatae veritatis, blanditiis nesciunt voluptatibus consequatur quis quasi? Corporis quidem tempora error dolor unde deserunt corrupti sed quam doloremque? Hic nostrum voluptatibus eveniet corporis nihil, quas blanditiis voluptas commodi sunt dignissimos!
@@ -51,12 +75,12 @@
             <div class="form">
                 <h1>Get Your Quote</h1>
                 <h1 style="color: #B2D190;">Today!</h1>
-                <form action="">
-                    <input type="text" id="fname" name="fname" value="Name*"><br>
-                    <input type="text" id="number" name="number" value="Mobile*"><br>
-                    <input type="email" id="Email" name="Email" value="Email*"><br>
-                    <input type="text" id="Requirenment" name="Requirement" value="Requirement*"><br>
-                    <button type="submit" class="btn">Send Message</button>
+                <form>
+                        <input type="text" id="fname" name="fname" value="Name*"><br>
+                        <input type="text" id="number" name="number" value="Mobile*"><br>
+                        <input type="email" id="Email" name="Email" value="Email*"><br>
+                        <input type="text" id="Requirenment" name="Requirement" value="Requirement*"><br>
+                    <button type="submit" class="btn btn-custom ">Send Message</button>
                 </form>
             </div>
             
@@ -79,23 +103,23 @@
             </div>
             
 
-            <div class="boxContainer">
-                <div  id=""  class="box box-1">
-                    <img width="50px" height="50px" src="/images/image 3.png" alt="innovation">
-                    <h3>Innovation</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p>
+            <div class="custom-box">
+                <div  id=""  class="box box-1 d-flex flex-column align-items-center justify-content-center text-center">
+                    <img width="50" height="50" src="/images/image 3.png" alt="innovation">
+                    <p class="fw-bold fs-4">Innovation</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p>
                 </div>
                 <div  id=""  class="box box-2">
-                    <img width="50px" height="50px" src="/images/image 4.png" alt="innovation">
-                    <h3>Integrity</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
+                    <img width="50" height="50" src="/images/image 4.png" alt="innovation">
+                    <p class="fw-bold fs-4">Integrity</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
                 <div  id=""  class="box box-3">
-                    <img width="50px" height="50px" src="/images/image 5.png" alt="innovation">
-                    <h3>Excellence</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
+                    <img width="50" height="50" src="/images/image 5.png" alt="innovation">
+                    <p class="fw-bold fs-4">Excellence</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
                 <div  id=""  class="box box-4">
-                    <img width="50px" height="50px" src="/images/image 6.png" alt="innovation">
-                    <h3>Customer Focus</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
+                    <img width="50" height="50" src="/images/image 6.png" alt="innovation">
+                    <p class="fw-bold fs-4">Customer Focus</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div>
                 <div  id=""  class="box box-5">
-                    <img width="50px" height="50px" src="/images/image 7.png" alt="innovation">
-                    <h3>Safety</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div> 
+                    <img width="50" height="50" src="/images/image 7.png" alt="innovation">
+                    <p class="fw-bold fs-4">Safety</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae?</p></div> 
             </div>
         </div>
 
@@ -105,32 +129,79 @@
         <div class="section4">
             <!-- heading and paragraph -->
             <div class="ourProduct">
-                <h1>Our</h1><h1 style="color: #B2D190;">Product</h1>
+                <h1>Our
+                <div class="productLine"></div>
+                <span style="color: #B2D190;">Product</span></h1>
             </div>
 
             <div class="paragraph">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut delectus, maxime incidunt veritatis fugit inventore at repellendus provident aliquam minus optio facilis dolor quidem qui reiciendis ab repellat praesentium sint quasi! Aspernatur harum, blanditiis rerum pariatur neque reiciendis nisi debitis facilis dolorem id fuga quaerat aut repellendus quia sit nesciunt.</p>
             </div>
             
-            <div class="productLine"></div>
+            <!-- carousel start from  here -->
 
             <!--  image and div container -->
-            <div class="productContainer">
-                <div class="product">
-                    <img width="330px" height="230px" src="/images/productImage1.png" alt="productImage1">
-                    <div class="productName"><h4>Product 1</h4></div>
-                </div>
-
-                <div class="product">
-                    <img width="330px" height="230px" src="/images/productImage2.png" alt="productImage1">
-                    <div class="productName"><h4>Product 2</h4></div>
-                </div>
-
-                <div class="product">
-                    <img width="330px" height="230px" src="/images/productImage3.png" alt="productImage1">
-                    <div class="productName"><h4>Product 3</h4></div>
-                </div>
-            </div>
+            <div class="row">
+              <div class="carouselWrapper">
+                <div class="major-carousel js-carousel owl-carousel">
+          
+                  <div>
+                    <div class="media media-custom d-block text-left">
+                      <a href="#">
+                        <img src="/images/productImage1.png" alt="image palaceholder" class="img-fluid">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="text-black mt-0">
+                          <a href="#" class="text-black">Product1</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+          
+          
+                  <div>
+                    <div class="media media-custom d-block text-left">
+                      <a href="#">
+                        <img src="/images/productImage2.png" alt="image palaceholder" class="img-fluid">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="text-black mt-0">
+                          <a href="#" >Prodcut2</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div class="media media-custom d-block text-left">
+                      <a href="#">
+                        <img src="/images/productImage3.png" alt="image palaceholder" class="img-fluid">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="text-black mt-0">
+                          <a href="#" class="text-black">Prodcut3</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div>
+                    <div class="media media-custom d-block text-left">
+                      <a href="#">
+                        <img src="/images/expert1.png" alt="image palaceholder" class="img-fluid">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="text-black mt-0">
+                          <a href="#" class="text-black">Product4</a>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+          
+                  </div>
+              </div>
+          </div>
+            <!-- carousel end  here -->
         </div>
         <!-- section 4 (Our products) end  here -->
 
@@ -138,51 +209,96 @@
         <div class="section5">
             <!-- heading and paragraph -->
             <div class="ourExperts">
-                <h1>Our</h1><h1 style="color: #B2D190;">Experts</h1>
+                <h1>Our <span style="color: #B2D190;">Experts</span>
+                <div class="expertsLine"></div>
+                </h1>
             </div>
 
             <div class="paragraph">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut delectus, maxime incidunt veritatis fugit inventore at repellendus provident aliquam minus optio facilis dolor quidem qui reiciendis ab repellat praesentium sint quasi! Aspernatur harum, blanditiis rerum pariatur neque reiciendis nisi debitis facilis dolorem id fuga quaerat aut repellendus quia sit nesciunt.</p>
             </div>
+            <!-- carousel start from  here -->
+            <div class="row">
+                <div class="carouselWrapper">
+                  <div class="major-carousel js-carousel owl-carousel">
             
-            <div class="expertsLine"></div>
-
-            <!--  image and div container -->
-            <div class="expertsContainer">
-                <div class="experts">
-                    <img width="330px" height="230px" src="/images/expert1.png" alt="productImage1">
-                    <div class="expertsName"><h4>ABC ACD</h4>
-                    <p>Founder/CEO</p></div>
+                    <div>
+                      <div class="media media-custom d-block text-left">
+                        <a href="#">
+                          <img src="/images/expert1.png" alt="image palaceholder" class="img-fluid">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="text-black mt-0">
+                            <a href="#" class="text-black">Expert1</a>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+            
+            
+                    <div>
+                      <div class="media media-custom d-block text-left">
+                        <a href="#">
+                          <img src="/images/expert2.png" alt="image palaceholder" class="img-fluid">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="text-black mt-0">
+                            <a href="#" >Expert2</a>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div>
+                      <div class="media media-custom d-block text-left">
+                        <a href="#">
+                          <img src="/images/expert3.png" alt="image palaceholder" class="img-fluid">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="text-black mt-0">
+                            <a href="#" class="text-black">Expert3</a>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div>
+                      <div class="media media-custom d-block text-left">
+                        <a href="#">
+                          <img src="/images/productImage1.png" alt="image palaceholder" class="img-fluid">
+                        </a>
+                        <div class="media-body">
+                          <h4 class="text-black mt-0">
+                            <a href="#" class="text-black">Expert4</a>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+            
+                    </div>
                 </div>
-
-                <div class="experts">
-                    <img width="330px" height="230px" src="/images/expert2.png" alt="productImage1">
-                    <div class="expertsName"><h4>ABC ACD</h4>
-                    <p>Techanical Head</p></div>
-                </div>
-
-                <div class="experts">
-                    <img width="330px" height="230px" src="/images/expert3.png" alt="productImage1">
-                    <div class="expertsName"><h4>ABC ACD</h4>
-                    <p>Quality In Charge</p></div>
-                </div>
-            </div>
+             </div>
+             <!-- carousel end here -->
         </div>
 
         <!-- section 5 (Our Experts) end  here -->
+
+        
 
         <!-- section 6 (latets blog) start from here -->
         <div class="section6">
             <!-- heading and paragraph -->
             <div class="latestBlogs">
-                <h1>Latest</h1><h1 style="color: #B2D190;">Blogs</h1>
+                <h1>Latest<span style="color: #B2D190;">Blogs</span>
+                    <div class="blogLine"></div>
+                
+                </h1>
             </div>
 
             <div class="paragraph">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut delectus, maxime incidunt veritatis fugit inventore at repellendus provident aliquam minus optio facilis dolor quidem qui reiciendis ab repellat praesentium sint quasi! Aspernatur harum, blanditiis rerum pariatur neque reiciendis nisi debitis facilis dolorem id fuga quaerat aut repellendus quia sit nesciunt.</p>
             </div>
             
-            <div class="blogLine"></div>
 
             <!--  image and div container -->
             <div class="blogsContainer">
@@ -293,7 +409,22 @@
          </footer>
 
 
-    </div>
+    </div> 
+    <!-- main div end here -->
+
+<!-- jQuery FIRST -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Then Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!-- Then Bootstrap (already fine) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+<!-- Then your custom script that initializes the carousel -->
+<script src="script.js"></script>
+
+
 <!-- ✅ Script to toggle menu visibility -->
 <script>
     const hamburger = document.getElementById('hamburger');
@@ -303,6 +434,5 @@
       navlist.classList.toggle('show'); // Toggle nav visibility
     });
   </script>
-  
 </body>
 </html>
